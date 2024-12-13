@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Converter</title>
     <style>
+      * {
+        color: aliceblue;
+        font-size: 40px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        background-color: black;
+        margin: 0;
+        overflow: hidden;
+      }
+      div {
+        background-color: blueviolet;
+        width: 60%;
+        padding: 10px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+      }
+      input {
+        color: black;
+        width: 60%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px 0;
+      }
       .grid-background {
         position: fixed;
         top: 0;
@@ -35,33 +63,10 @@
         height: 100%;
         background: linear-gradient(circle, transparent, rgba(0, 0, 0, 0.9));
       }
-      * {
-        color: aliceblue;
-        font-size: 40px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-      body {
-        background-color: black;
-      }
-      div {
-        background-color: blueviolet;
-        width: 60%;
-        padding: 10px;
-        border-radius: 20px;
-      }
-      input {
-        color: black;
-        width: 60%;
-        padding: 10px;
-        font-size: 20px;
-        border-radius: 10px;
-        border: none;
-        margin: 10px;
-      }
     </style>
   </head>
-  <body class="gridb">
+  <body>
+    <div class="grid-background"></div>
     <center>
       <div>
         <h1>Temperature Converter</h1>
